@@ -16,12 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderTodoList(todos) {
 	const unorderedListElement = document.querySelector('#tasks');
-
-	
-	unorderedListElement.innerHTML = '';
-
-	
-	todos.forEach((todo) => {
+    unorderedListElement.innerHTML = '';
+    todos.forEach((todo) => {
 		
 		const li = document.createElement('li');
 		li.textContent = todo;
